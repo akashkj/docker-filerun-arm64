@@ -56,7 +56,7 @@ RUN apt-get update \
     && a2enconf filerun \
     # Download FileRun installation package
     && echo [Download FileRun installation package] \
-    && curl -o /filerun.zip -L https://filerun.com/download-latest-php73 \
+    && curl -o /filerun.zip -L https://filerun.com/download-latest \
     && chown www-data:www-data /user-files \
     && chmod +x /wait-for-it.sh /import-db.sh /entrypoint.sh
 
